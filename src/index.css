@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Code+Pro:wght@300&family=Tilt+Prism&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family:'poppins',Arial !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.temp{
+  font-family: 'Poppins';
+  
+  margin:0 ;
+}
+p{
+  font-size: 1.6rem;
+}
+h1{
+  font-size: 5rem;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: gray;
+  color: rgb(32, 18, 18);
+  background-image:url('./assets/clouds2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: hidden;
+}
+
+.app::before{
+  content: '';
+  
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.app .search{
+  text-align: center;
+  padding: 1rem;
+}
+.app input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,.8);
+  background: rgba(255,255,255,.1);
+  color: whitesmoke;
+}
+
+::placeholder{
+  color: #fff;
+}
+.container{
+  max-width: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top:10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top{
+  width: 100%;
+  margin: 1rem auto;
+}
+.app .description{
+  position: relative;
+  text-align: center;
+  
+  transform-origin: 0 0;
+  
+}
+
+.app .bottom{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  margin: 80px auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,.5);
+}
+.bold{
+  font-weight: 700;
+}
